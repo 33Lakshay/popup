@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+
+.modal-header{
+    background-size: 100% 100%;
+    background-image: url(arc.png);
+    background-repeat: no-repeat;
+}
+.modal-body{
+    background-color: #737373;
+    margin-top: -2px;
+    
+    color: black;
+    /* font-weight: bold; */
+    
+}
+.modal-body .profile{
+    font-weight: bolder !important;
+    letter-spacing: 3px; 
+    font-size:20px;
+    font-family: 'Jost', sans-serif;
+}
+.name-img{
+    display: flex;
+    justify-content: space-between;
+}
+.name-img .img{
+    width: 140px;
+    height: 140px;
+    position: relative;
+    bottom: 47px;
+    left: 12px;
+    border: 5px solid #b32728;
+    border-radius: 100%;
+}
+.name-img .img img{
+    padding: 3px;
+    width: 115px;
+    height: 115px;
+    border-radius: 115px;
+    position: relative;
+    top: 8px;
+    /* bottom: 6px; */
+    left: 8px;
+    border: 3px dashed #b32728;
+}
+.profile-text{
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Jost';
+}
+
+@media(max-width:498px){
+    .name-img{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name-img .img{
+        margin-top: 50px;
+    }
+}
